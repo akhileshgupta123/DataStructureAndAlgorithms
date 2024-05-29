@@ -25,10 +25,11 @@ public class BCDConversion {
             //System.out.println(rev);
             n /= 10;
 
-            //System.out.println(n);
+            System.out.println(n);
+            System.out.println(rev);
         }
 
-        //System.out.println(rev);
+        System.out.println("here data"+rev);
 
         while(rev > 0){
             String b = Integer.toBinaryString(rev % 10);

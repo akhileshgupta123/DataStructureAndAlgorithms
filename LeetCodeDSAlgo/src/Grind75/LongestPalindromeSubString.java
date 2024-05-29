@@ -5,7 +5,8 @@ package Grind75;
 //Space complexity:O(1)
 public class LongestPalindromeSubString {
     public static void main(String args[]){
-        String s = "babad";
+        //String s = "babad";
+        String s = "abba";
         LongestPalindromeSubString obj = new LongestPalindromeSubString();
         String result = obj.longestSubString(s);
         System.out.println(result);
@@ -37,6 +38,10 @@ public class LongestPalindromeSubString {
             i--;
             j++;
         }
+
+       /* System.out.println("j:"+j);
+        System.out.println("i:"+i);
+        System.out.println("final:"+(j-i-1));*/
         return j-i-1;
     }
 }

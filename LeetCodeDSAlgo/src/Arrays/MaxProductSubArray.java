@@ -1,9 +1,12 @@
 package Arrays;
 
+//152. Maximum Product Subarray
 public class MaxProductSubArray {
     public static void main(String args[]){
         MaxProductSubArray obj = new MaxProductSubArray();
         int nums[] = new int[]{1, -2, -3, 0, 7, -8, -2};
+        //int nums[] = new int[]{2,3,-2,4};
+
         int result = obj.maxProduct(nums);
 
         System.out.println("result is :"+result);

@@ -65,7 +65,9 @@ public class BSTToDoblyLinkedList {
             BSTToList right = root.right;
 
             head.left = root;
-            System.out.println("head is :"+root.data);
+            System.out.println("head left is :"+root.data);
+            System.out.println("head is :"+head.data);
+            System.out.println("head right is :"+right);
             root.right = head;
 
             //displayCList(head);

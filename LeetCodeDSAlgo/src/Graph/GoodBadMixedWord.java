@@ -52,7 +52,8 @@ public class GoodBadMixedWord {
                 }else{
                     count = 1;
                 }
-                qmarkFound = false; vowelFound = true;
+                qmarkFound = false;
+                vowelFound = true;
             }else if (ch != '?') {
                 if (!vowelFound) {
 
@@ -62,7 +63,8 @@ public class GoodBadMixedWord {
                 }else{
                     count = 1;
                 }
-                qmarkFound = false; vowelFound = false;
+                qmarkFound = false;
+                vowelFound = false;
             }else {
                 if ((vowelFound && count == 2) || (!vowelFound && count == 4))
                     return "mixed";

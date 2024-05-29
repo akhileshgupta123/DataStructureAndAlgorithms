@@ -21,6 +21,9 @@ public class ReverseEvenNumber {
             }
         }
 
+        System.out.println("before start node");
+        obj.printList(head);
+        System.out.println("after start node");
         //ReverseEvenNumber obj = new ReverseEvenNumber();
         head = obj.reverse(head);
         obj.printList(head);
@@ -40,6 +43,9 @@ public class ReverseEvenNumber {
 
             prev = curr;
             curr = curr.next;
+            if(curr!=null){
+                System.out.println("inner"+curr.data);
+            }
         }
         return dummy.next;
     }
@@ -53,6 +59,7 @@ public class ReverseEvenNumber {
             prev = curr;
             curr = t;
         }
+        //System.out.println("####"+curr.data);
         head.next = curr;
         return prev;
     }

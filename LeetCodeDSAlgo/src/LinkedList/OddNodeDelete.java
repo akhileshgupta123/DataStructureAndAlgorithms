@@ -11,6 +11,7 @@ public class OddNodeDelete {
         obj.node.next.next.next.next = new OddDeleteListNode(5);
         obj.node.next.next.next.next.next = new OddDeleteListNode(6);
 
+
         obj.deleteOddNode(obj.node);
         obj.display(obj.node);
 

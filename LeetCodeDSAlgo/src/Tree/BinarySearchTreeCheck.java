@@ -20,7 +20,9 @@ public class BinarySearchTreeCheck {
        // int[] pre2 = new int[]{20, 10, 5, 1, 7, 15, 30, 25, 35, 32, 40};
 
        // int[] pre2 = new int[]{25,1,4,0,2,3,6};
-        int[] pre2 = new int[]{2,1,3};
+        //int[] pre2 = new int[]{2,1,3};
+
+        int[] pre2 = new int[]{25,1,4,0,2,3,6};
 
         int n2 = pre2.length;
         if (obj.isBSTTree(pre2, n2) == true) {

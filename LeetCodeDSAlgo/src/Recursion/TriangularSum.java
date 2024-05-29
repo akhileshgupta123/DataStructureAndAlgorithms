@@ -15,6 +15,7 @@ public class TriangularSum {
 
             for (int i = 0; i < length -1; i++) {
                 nums[i] = (nums[i] + nums[i+1]) % 10;
+                //System.out.println(nums[i]);
             }
             length--;
         }

@@ -12,7 +12,12 @@ public class FileSystem {
 
     public FileSystem() {
         directoryDetailsMap = new HashMap<>();
-        directoryHeap = new PriorityQueue<Directory>((a, b) -> b.size - a.size);
+        //directoryHeap = new PriorityQueue<Directory>((a, b) -> b.size - a.size);
+        directoryHeap = new PriorityQueue<Directory>(new Comparator<Directory>(){
+            public int compare(Directory a, Directory b){
+                return b.size - a.size;
+            }
+        });
         isDirectoryPresentInHeap = new HashSet<>();
         this.allFileSize = 0;
     }
@@ -27,7 +32,13 @@ public class FileSystem {
             return new ArrayList<>();
 
         List<Directory> output = new ArrayList<>();
-        PriorityQueue<Directory> tempDirectoryHeap = new PriorityQueue<Directory>((a, b) -> b.size - a.size) ;
+        //PriorityQueue<Directory> tempDirectoryHeap = new PriorityQueue<Directory>((a, b) -> b.size - a.size) ;
+
+        PriorityQueue<Directory> tempDirectoryHeap = new PriorityQueue<Directory>(new Comparator<Directory>(){
+            public int compare(Directory a, Directory b){
+                return b.size-a.size;
+            }
+        });
 
         for (int i = 0; i < n; i++) {
             Directory d = directoryHeap.poll();

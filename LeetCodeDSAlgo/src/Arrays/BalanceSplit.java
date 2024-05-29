@@ -5,8 +5,8 @@ public class BalanceSplit {
 
     public static void main(String args[]){
         BalanceSplit obj = new BalanceSplit();
-        //int arr[] = {1, 5, 7, 1};
-        int arr[] = {12, 7, 6, 7, 6};
+        int arr[] = {1, 5, 7, 1};
+        //int arr[] = {12, 7, 6, 7, 6};
         //int arr[] = {1,2,6,7};
 
         boolean status = obj.isBalanceSplitExist(arr);

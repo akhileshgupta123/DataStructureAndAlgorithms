@@ -15,5 +15,6 @@ public class MaximumProfit {
         }
 
         System.out.println("sell:"+sell);
+        System.out.println("buy:"+buy);
     }
 }

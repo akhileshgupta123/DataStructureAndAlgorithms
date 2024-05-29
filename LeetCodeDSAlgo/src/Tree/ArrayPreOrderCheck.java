@@ -9,9 +9,9 @@ public class ArrayPreOrderCheck {
 
     public static void main(String args[]){
         ArrayPreOrderCheck obj = new ArrayPreOrderCheck();
-        int[][] nodes = new int[][]{{0,-1},{1,0},{2,0},{3,2},{4,2}};
+        //int[][] nodes = new int[][]{{0,-1},{1,0},{2,0},{3,2},{4,2}};
 
-        //int[][] nodes = new int[][]{{0,-1},{1,0},{2,0},{3,1},{4,1}};
+        int[][] nodes = new int[][]{{0,-1},{1,0},{2,0},{3,1},{4,1}};
 
 
 

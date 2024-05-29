@@ -26,13 +26,19 @@ public class EncryptedWord {
 
         if(mid>0){
             String ls = s.substring(0,mid);
+            System.out.println("left side:"+ls);
 
             r += findEncryptedWord(ls);
+
+            System.out.println("final left side:"+r);
         }
 
         if(mid<s.length()-1){
             String rs = s.substring(mid+1, s.length());
+            System.out.println("right side:"+rs);
             r += findEncryptedWord(rs);
+
+            System.out.println("final right side:"+r);
         }
 
         return r;

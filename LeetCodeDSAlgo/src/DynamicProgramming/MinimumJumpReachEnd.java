@@ -7,6 +7,8 @@ public class MinimumJumpReachEnd {
     public static void main(String args[]){
 
         int nums[] = new int[]{2,3,1,1,4};
+        //int nums[] = new int[]{2,3,0,1,4};
+
         MinimumJumpReachEnd obj = new MinimumJumpReachEnd();
         //int result = obj.minJump(nums);
         int result = obj.minJump1(nums);
@@ -48,18 +50,25 @@ public class MinimumJumpReachEnd {
         int maxReach = arr[0];
         int step = arr[0];
         int jump = 1;
-
+      //2,3,1,1,4
         for (int i = 1; i < arr.length; i++) {
-            if (i == arr.length - 1)
+            if (i == arr.length - 1){
+                System.out.println("here step is:"+step);
                 return jump;
+            }
+
 
             maxReach = Math.max(maxReach, i + arr[i]);
+            System.out.println("maxReach is:"+maxReach);
+            System.out.println("step is:"+step);
             step--;
             if (step == 0) {
                 jump++;
                 if (i >= maxReach)
                     return -1;
                 step = maxReach - i;
+                System.out.println("inner i is:"+i);
+                System.out.println("inner step is:"+step);
             }
         }
 
