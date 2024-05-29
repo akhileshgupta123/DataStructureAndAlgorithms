@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="icsTestNGSuite" parallel="false">
+   <test name="icsTestNGTest" preserve-order="true">
+      <classes>
+<!--         <class name="main.java.com.vmware.testng.ics.TestAppSoftWareLab"/>-->
+         <class name="src.main.java.MyTestBase"/>
+      </classes>
+   </test>
+</suite>
